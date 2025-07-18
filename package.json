@@ -1,6 +1,6 @@
 {
     "name": "vesktop",
-    "version": "1.5.8",
+    "version": "1.5.8-YMica.OSE.2",
     "private": true,
     "description": "Vesktop is a custom Discord desktop app",
     "keywords": [],
@@ -39,7 +39,7 @@
         "@types/react": "18.3.1",
         "@vencord/types": "^1.11.5",
         "dotenv": "^16.5.0",
-        "electron": "^37.2.0",
+        "electron": "^37.2.3",
         "electron-builder": "^26.0.12",
         "esbuild": "^0.25.5",
         "eslint": "^9.30.1",
@@ -63,7 +63,7 @@
         "pnpm": ">=8"
     },
     "build": {
-        "appId": "dev.vencord.vesktop",
+        "appId": "app.ymica.vesktop",
         "productName": "Vesktop",
         "files": [
             "!*",
@@ -189,7 +189,9 @@
             ]
         },
         "publish": {
-            "provider": "github"
+            "provider": "github",
+            "owner": "YMica-OSE",
+            "repo": "Vesktop"
         },
         "rpm": {
             "fpm": [
