@@ -1,6 +1,6 @@
 {
     "name": "vesktop",
-    "version": "1.6.5",
+    "version": "1.6.5-YMica.OSE.2",
     "private": true,
     "description": "Vesktop is a custom Discord desktop app",
     "keywords": [],
@@ -28,22 +28,22 @@
     },
     "dependencies": {
         "arrpc": "github:OpenAsar/arrpc#2234e9c9111f4c42ebcc3aa6a2215bfd979eef77",
-        "electron-updater": "^6.6.2"
+        "electron-updater": "^6.8.3"
     },
     "optionalDependencies": {
         "@vencord/venmic": "^6.1.0"
     },
     "devDependencies": {
         "@fal-works/esbuild-plugin-global-externals": "^2.1.2",
-        "@stylistic/eslint-plugin": "^5.8.0",
-        "@types/node": "^25.2.3",
+        "@stylistic/eslint-plugin": "^5.10.0",
+        "@types/node": "^25.5.0",
         "@types/react": "19.2.9",
         "@vencord/types": "^1.14.1",
-        "dotenv": "^17.2.4",
-        "electron": "^40.4.0",
-        "electron-builder": "^26.7.0",
-        "esbuild": "^0.27.3",
-        "eslint": "^10.0.0",
+        "dotenv": "^17.3.1",
+        "electron": "^41.0.2",
+        "electron-builder": "^26.8.1",
+        "esbuild": "^0.27.4",
+        "eslint": "^10.0.3",
         "eslint-import-resolver-alias": "^1.1.2",
         "eslint-plugin-path-alias": "^2.1.0",
         "eslint-plugin-prettier": "^5.5.5",
@@ -51,14 +51,14 @@
         "eslint-plugin-simple-header": "^1.2.2",
         "eslint-plugin-simple-import-sort": "^12.1.1",
         "eslint-plugin-unused-imports": "^4.4.1",
-        "libvesktop": "link:packages/libvesktop",
+        "libvesktop": "link:packages\\libvesktop",
         "prettier": "^3.8.1",
         "source-map-support": "^0.5.21",
         "tsx": "^4.21.0",
         "type-fest": "^5.4.4",
         "typescript": "^5.9.3",
-        "typescript-eslint": "^8.55.0",
-        "xml-formatter": "^3.6.7"
+        "typescript-eslint": "^8.57.0",
+        "xml-formatter": "^3.7.0"
     },
     "packageManager": "pnpm@10.7.1",
     "engines": {
@@ -66,7 +66,7 @@
         "pnpm": ">=8"
     },
     "build": {
-        "appId": "dev.vencord.vesktop",
+        "appId": "org.sakuraose.vesktop",
         "productName": "Vesktop",
         "executableName": "vesktop",
         "files": [
@@ -196,7 +196,9 @@
             ]
         },
         "publish": {
-            "provider": "github"
+            "provider": "github",
+            "owner": "YMica-OSE",
+            "repo": "Vesktop"
         },
         "rpm": {
             "fpm": [
