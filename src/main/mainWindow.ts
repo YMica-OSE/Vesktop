@@ -185,6 +185,7 @@ function initWindowBoundsListeners(win: BrowserWindow) {
     win.on("maximize", saveState);
     win.on("minimize", saveState);
     win.on("unmaximize", saveState);
+    win.on("restore", saveState);
 
     // I like to keep the default window size (because OCD), so disaling this
     /* const saveBounds = () => {
@@ -483,5 +484,6 @@ export async function createWindows() {
         }
     });
 
+    mainWin.webContents.on("render-process-gone", (event, details) => console.log(details));
     initArRPC();
 }
