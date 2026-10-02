@@ -25,8 +25,8 @@
         "generateMeta": "tsx scripts/utils/generateMeta.mts"
     },
     "dependencies": {
-        "arrpc": "github:OpenAsar/arrpc#2234e9c9111f4c42ebcc3aa6a2215bfd979eef77",
-        "electron-updater": "^6.8.3"
+        "arrpc": "github:Vencord/arrpc#1dc801e8ea14d96ce8dccff416417614f058afb8",
+        "electron-updater": "6.6.2"
     },
     "optionalDependencies": {
         "@vencord/venmic": "^7.2.3"
@@ -38,7 +38,7 @@
         "@types/react": "19.2.9",
         "@vencord/types": "^1.15.1",
         "dotenv": "^17.3.1",
-        "electron": "^44.5.1",
+        "electron": "44.5.1",
         "electron-builder": "^26.16.1",
         "esbuild": "^0.28.2",
         "eslint": "^10.11.0",
